@@ -46,11 +46,11 @@
     font-weight: bold;
 }
 </style>
-<h1>api-documentation for
+<h1>api documentation for
     <a
-        
+
         href="http://sailsjs.org"
-        
+
     >sails (v0.12.13)</a>
 </h1>
 <h4>API-driven framework for building realtime apps, using MVC conventions (based on Express and Socket.io)</h4>
@@ -58,1165 +58,1165 @@
     href="#apidoc.tableOfContents"
     id="apidoc.tableOfContents"
 ><h1>table of contents</h1></a><ol>
-    
+
     <li class="apidocModuleLi"><a href="#apidoc.module.sails">module sails</a><ol>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.sails.Sails">
             function <span class="apidocSignatureSpan">sails.</span>Sails
             <span class="apidocSignatureSpan">()</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.sails.after">
             function <span class="apidocSignatureSpan">sails.</span>after
             <span class="apidocSignatureSpan">(events, fn)</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.sails.all">
             function <span class="apidocSignatureSpan">sails.</span>all
             <span class="apidocSignatureSpan">()</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.sails.delete">
             function <span class="apidocSignatureSpan">sails.</span>delete
             <span class="apidocSignatureSpan">()</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.sails.emit">
             function <span class="apidocSignatureSpan">sails.</span>emit
             <span class="apidocSignatureSpan">(evName)</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.sails.exposeGlobals">
             function <span class="apidocSignatureSpan">sails.</span>exposeGlobals
             <span class="apidocSignatureSpan">()</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.sails.get">
             function <span class="apidocSignatureSpan">sails.</span>get
             <span class="apidocSignatureSpan">()</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.sails.getBaseurl">
             function <span class="apidocSignatureSpan">sails.</span>getBaseurl
             <span class="apidocSignatureSpan">()</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.sails.getHost">
             function <span class="apidocSignatureSpan">sails.</span>getHost
             <span class="apidocSignatureSpan">()</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.sails.initialize">
             function <span class="apidocSignatureSpan">sails.</span>initialize
             <span class="apidocSignatureSpan">()</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.sails.inspect">
             function <span class="apidocSignatureSpan">sails.</span>inspect
             <span class="apidocSignatureSpan">()</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.sails.isLocalSailsValid">
             function <span class="apidocSignatureSpan">sails.</span>isLocalSailsValid
             <span class="apidocSignatureSpan">()</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.sails.isSailsAppSync">
             function <span class="apidocSignatureSpan">sails.</span>isSailsAppSync
             <span class="apidocSignatureSpan">()</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.sails.lift">
             function <span class="apidocSignatureSpan">sails.</span>lift
             <span class="apidocSignatureSpan">()</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.sails.load">
             function <span class="apidocSignatureSpan">sails.</span>load
             <span class="apidocSignatureSpan">()</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.sails.log">
             function <span class="apidocSignatureSpan">sails.</span>log
             <span class="apidocSignatureSpan">()</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.sails.lower">
             function <span class="apidocSignatureSpan">sails.</span>lower
             <span class="apidocSignatureSpan">()</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.sails.post">
             function <span class="apidocSignatureSpan">sails.</span>post
             <span class="apidocSignatureSpan">()</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.sails.put">
             function <span class="apidocSignatureSpan">sails.</span>put
             <span class="apidocSignatureSpan">()</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.sails.request">
             function <span class="apidocSignatureSpan">sails.</span>request
             <span class="apidocSignatureSpan">()</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.sails.router._privateRouter">
             function <span class="apidocSignatureSpan">sails.</span>router._privateRouter
             <span class="apidocSignatureSpan">(req, res, next)</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.sails.runBootstrap">
             function <span class="apidocSignatureSpan">sails.</span>runBootstrap
             <span class="apidocSignatureSpan">()</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.sails.toJSON">
             function <span class="apidocSignatureSpan">sails.</span>toJSON
             <span class="apidocSignatureSpan">()</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <span class="apidocSignatureSpan">number <span class="apidocSignatureSpan">sails.</span>_eventsCount</span>
-            
+
         </li>
-        
+
         <li>
-            
+
             <span class="apidocSignatureSpan">number <span class="apidocSignatureSpan">sails.</span>_maxListeners</span>
-            
+
         </li>
-        
+
         <li>
-            
+
             <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">sails.</span>_events</span>
-            
+
         </li>
-        
+
         <li>
-            
+
             <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">sails.</span>childProcesses</span>
-            
+
         </li>
-        
+
         <li>
-            
+
             <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">sails.</span>domain</span>
-            
+
         </li>
-        
+
         <li>
-            
+
             <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">sails.</span>router</span>
-            
+
         </li>
-        
+
         <li>
-            
+
             <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">sails.</span>router.defaultHandlers</span>
-            
+
         </li>
-        
+
         <li>
-            
+
             <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">sails.</span>warmEvents</span>
-            
+
         </li>
-        
+
     </ol></li>
-    
+
     <li class="apidocModuleLi"><a href="#apidoc.module.sails.Sails">module sails.Sails</a><ol>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.sails.Sails.Sails">
             function <span class="apidocSignatureSpan">sails.</span>Sails
             <span class="apidocSignatureSpan">()</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.sails.Sails.isLocalSailsValid">
             function <span class="apidocSignatureSpan">sails.Sails.</span>isLocalSailsValid
             <span class="apidocSignatureSpan">()</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.sails.Sails.isSailsAppSync">
             function <span class="apidocSignatureSpan">sails.Sails.</span>isSailsAppSync
             <span class="apidocSignatureSpan">()</span>
             </a>
-            
+
         </li>
-        
+
     </ol></li>
-    
+
     <li class="apidocModuleLi"><a href="#apidoc.module.sails.log">module sails.log</a><ol>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.sails.log.log">
             function <span class="apidocSignatureSpan">sails.</span>log
             <span class="apidocSignatureSpan">()</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.sails.log.blank">
             function <span class="apidocSignatureSpan">sails.log.</span>blank
             <span class="apidocSignatureSpan">()</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.sails.log.crit">
             function <span class="apidocSignatureSpan">sails.log.</span>crit
             <span class="apidocSignatureSpan">()</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.sails.log.debug">
             function <span class="apidocSignatureSpan">sails.log.</span>debug
             <span class="apidocSignatureSpan">()</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.sails.log.error">
             function <span class="apidocSignatureSpan">sails.log.</span>error
             <span class="apidocSignatureSpan">()</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.sails.log.info">
             function <span class="apidocSignatureSpan">sails.log.</span>info
             <span class="apidocSignatureSpan">()</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.sails.log.silly">
             function <span class="apidocSignatureSpan">sails.log.</span>silly
             <span class="apidocSignatureSpan">()</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.sails.log.verbose">
             function <span class="apidocSignatureSpan">sails.log.</span>verbose
             <span class="apidocSignatureSpan">()</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.sails.log.warn">
             function <span class="apidocSignatureSpan">sails.log.</span>warn
             <span class="apidocSignatureSpan">()</span>
             </a>
-            
+
         </li>
-        
+
     </ol></li>
-    
+
     <li class="apidocModuleLi"><a href="#apidoc.module.sails.router">module sails.router</a><ol>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.sails.router._privateRouter">
             function <span class="apidocSignatureSpan">sails.router.</span>_privateRouter
             <span class="apidocSignatureSpan">(req, res, next)</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.sails.router.bind">
             function <span class="apidocSignatureSpan">sails.router.</span>bind
             <span class="apidocSignatureSpan">()</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.sails.router.flush">
             function <span class="apidocSignatureSpan">sails.router.</span>flush
             <span class="apidocSignatureSpan">()</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.sails.router.load">
             function <span class="apidocSignatureSpan">sails.router.</span>load
             <span class="apidocSignatureSpan">()</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.sails.router.reset">
             function <span class="apidocSignatureSpan">sails.router.</span>reset
             <span class="apidocSignatureSpan">()</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.sails.router.route">
             function <span class="apidocSignatureSpan">sails.router.</span>route
             <span class="apidocSignatureSpan">()</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.sails.router.unbind">
             function <span class="apidocSignatureSpan">sails.router.</span>unbind
             <span class="apidocSignatureSpan">()</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">sails.router.</span>defaultHandlers</span>
-            
+
         </li>
-        
+
         <li>
-            
+
             <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">sails.router.</span>sails</span>
-            
+
         </li>
-        
+
     </ol></li>
-    
+
     <li class="apidocModuleLi"><a href="#apidoc.module.sails.router._privateRouter">module sails.router._privateRouter</a><ol>
-        
+
         <li>
-            
+
             <span class="apidocSignatureSpan">boolean <span class="apidocSignatureSpan">sails.router._privateRouter.</span>_usedRouter</span>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.sails.router._privateRouter._privateRouter">
             function <span class="apidocSignatureSpan">sails.router.</span>_privateRouter
             <span class="apidocSignatureSpan">(req, res, next)</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.sails.router._privateRouter.acl">
             function <span class="apidocSignatureSpan">sails.router._privateRouter.</span>acl
             <span class="apidocSignatureSpan">(path)</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.sails.router._privateRouter.addListener">
             function <span class="apidocSignatureSpan">sails.router._privateRouter.</span>addListener
             <span class="apidocSignatureSpan">(type, listener)</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.sails.router._privateRouter.all">
             function <span class="apidocSignatureSpan">sails.router._privateRouter.</span>all
             <span class="apidocSignatureSpan">(path)</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.sails.router._privateRouter.bind">
             function <span class="apidocSignatureSpan">sails.router._privateRouter.</span>bind
             <span class="apidocSignatureSpan">(path)</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.sails.router._privateRouter.checkout">
             function <span class="apidocSignatureSpan">sails.router._privateRouter.</span>checkout
             <span class="apidocSignatureSpan">(path)</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.sails.router._privateRouter.configure">
             function <span class="apidocSignatureSpan">sails.router._privateRouter.</span>configure
             <span class="apidocSignatureSpan">(arg0, arg1)</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.sails.router._privateRouter.connect">
             function <span class="apidocSignatureSpan">sails.router._privateRouter.</span>connect
             <span class="apidocSignatureSpan">(path)</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.sails.router._privateRouter.copy">
             function <span class="apidocSignatureSpan">sails.router._privateRouter.</span>copy
             <span class="apidocSignatureSpan">(path)</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.sails.router._privateRouter.defaultConfiguration">
             function <span class="apidocSignatureSpan">sails.router._privateRouter.</span>defaultConfiguration
             <span class="apidocSignatureSpan">()</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.sails.router._privateRouter.del">
             function <span class="apidocSignatureSpan">sails.router._privateRouter.</span>del
             <span class="apidocSignatureSpan">(arg0)</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.sails.router._privateRouter.delete">
             function <span class="apidocSignatureSpan">sails.router._privateRouter.</span>delete
             <span class="apidocSignatureSpan">(path)</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.sails.router._privateRouter.disable">
             function <span class="apidocSignatureSpan">sails.router._privateRouter.</span>disable
             <span class="apidocSignatureSpan">(setting)</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.sails.router._privateRouter.disabled">
             function <span class="apidocSignatureSpan">sails.router._privateRouter.</span>disabled
             <span class="apidocSignatureSpan">(setting)</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.sails.router._privateRouter.emit">
             function <span class="apidocSignatureSpan">sails.router._privateRouter.</span>emit
             <span class="apidocSignatureSpan">(type)</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.sails.router._privateRouter.enable">
             function <span class="apidocSignatureSpan">sails.router._privateRouter.</span>enable
             <span class="apidocSignatureSpan">(setting)</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.sails.router._privateRouter.enabled">
             function <span class="apidocSignatureSpan">sails.router._privateRouter.</span>enabled
             <span class="apidocSignatureSpan">(setting)</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.sails.router._privateRouter.engine">
             function <span class="apidocSignatureSpan">sails.router._privateRouter.</span>engine
             <span class="apidocSignatureSpan">(ext, fn)</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.sails.router._privateRouter.eventNames">
             function <span class="apidocSignatureSpan">sails.router._privateRouter.</span>eventNames
             <span class="apidocSignatureSpan">()</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.sails.router._privateRouter.get">
             function <span class="apidocSignatureSpan">sails.router._privateRouter.</span>get
             <span class="apidocSignatureSpan">(path)</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.sails.router._privateRouter.getMaxListeners">
             function <span class="apidocSignatureSpan">sails.router._privateRouter.</span>getMaxListeners
             <span class="apidocSignatureSpan">()</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.sails.router._privateRouter.handle">
             function <span class="apidocSignatureSpan">sails.router._privateRouter.</span>handle
             <span class="apidocSignatureSpan">(req, res, out)</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.sails.router._privateRouter.head">
             function <span class="apidocSignatureSpan">sails.router._privateRouter.</span>head
             <span class="apidocSignatureSpan">(path)</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.sails.router._privateRouter.init">
             function <span class="apidocSignatureSpan">sails.router._privateRouter.</span>init
             <span class="apidocSignatureSpan">()</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.sails.router._privateRouter.link">
             function <span class="apidocSignatureSpan">sails.router._privateRouter.</span>link
             <span class="apidocSignatureSpan">(path)</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.sails.router._privateRouter.listen">
             function <span class="apidocSignatureSpan">sails.router._privateRouter.</span>listen
             <span class="apidocSignatureSpan">()</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.sails.router._privateRouter.listenerCount">
             function <span class="apidocSignatureSpan">sails.router._privateRouter.</span>listenerCount
             <span class="apidocSignatureSpan">(type)</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.sails.router._privateRouter.listeners">
             function <span class="apidocSignatureSpan">sails.router._privateRouter.</span>listeners
             <span class="apidocSignatureSpan">(type)</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.sails.router._privateRouter.locals">
             function <span class="apidocSignatureSpan">sails.router._privateRouter.</span>locals
             <span class="apidocSignatureSpan">(obj)</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.sails.router._privateRouter.lock">
             function <span class="apidocSignatureSpan">sails.router._privateRouter.</span>lock
             <span class="apidocSignatureSpan">(path)</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.sails.router._privateRouter.m-search">
             function <span class="apidocSignatureSpan">sails.router._privateRouter.</span>m-search
             <span class="apidocSignatureSpan">(path)</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.sails.router._privateRouter.merge">
             function <span class="apidocSignatureSpan">sails.router._privateRouter.</span>merge
             <span class="apidocSignatureSpan">(path)</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.sails.router._privateRouter.mkactivity">
             function <span class="apidocSignatureSpan">sails.router._privateRouter.</span>mkactivity
             <span class="apidocSignatureSpan">(path)</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.sails.router._privateRouter.mkcalendar">
             function <span class="apidocSignatureSpan">sails.router._privateRouter.</span>mkcalendar
             <span class="apidocSignatureSpan">(path)</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.sails.router._privateRouter.mkcol">
             function <span class="apidocSignatureSpan">sails.router._privateRouter.</span>mkcol
             <span class="apidocSignatureSpan">(path)</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.sails.router._privateRouter.move">
             function <span class="apidocSignatureSpan">sails.router._privateRouter.</span>move
             <span class="apidocSignatureSpan">(path)</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.sails.router._privateRouter.notify">
             function <span class="apidocSignatureSpan">sails.router._privateRouter.</span>notify
             <span class="apidocSignatureSpan">(path)</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.sails.router._privateRouter.on">
             function <span class="apidocSignatureSpan">sails.router._privateRouter.</span>on
             <span class="apidocSignatureSpan">(type, listener)</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.sails.router._privateRouter.once">
             function <span class="apidocSignatureSpan">sails.router._privateRouter.</span>once
             <span class="apidocSignatureSpan">(type, listener)</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.sails.router._privateRouter.options">
             function <span class="apidocSignatureSpan">sails.router._privateRouter.</span>options
             <span class="apidocSignatureSpan">(path)</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.sails.router._privateRouter.param">
             function <span class="apidocSignatureSpan">sails.router._privateRouter.</span>param
             <span class="apidocSignatureSpan">(name, fn)</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.sails.router._privateRouter.patch">
             function <span class="apidocSignatureSpan">sails.router._privateRouter.</span>patch
             <span class="apidocSignatureSpan">(path)</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.sails.router._privateRouter.path">
             function <span class="apidocSignatureSpan">sails.router._privateRouter.</span>path
             <span class="apidocSignatureSpan">()</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.sails.router._privateRouter.post">
             function <span class="apidocSignatureSpan">sails.router._privateRouter.</span>post
             <span class="apidocSignatureSpan">(path)</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.sails.router._privateRouter.prependListener">
             function <span class="apidocSignatureSpan">sails.router._privateRouter.</span>prependListener
             <span class="apidocSignatureSpan">(type, listener)</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.sails.router._privateRouter.prependOnceListener">
             function <span class="apidocSignatureSpan">sails.router._privateRouter.</span>prependOnceListener
             <span class="apidocSignatureSpan">(type, listener)</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.sails.router._privateRouter.propfind">
             function <span class="apidocSignatureSpan">sails.router._privateRouter.</span>propfind
             <span class="apidocSignatureSpan">(path)</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.sails.router._privateRouter.proppatch">
             function <span class="apidocSignatureSpan">sails.router._privateRouter.</span>proppatch
             <span class="apidocSignatureSpan">(path)</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.sails.router._privateRouter.purge">
             function <span class="apidocSignatureSpan">sails.router._privateRouter.</span>purge
             <span class="apidocSignatureSpan">(path)</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.sails.router._privateRouter.put">
             function <span class="apidocSignatureSpan">sails.router._privateRouter.</span>put
             <span class="apidocSignatureSpan">(path)</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.sails.router._privateRouter.rebind">
             function <span class="apidocSignatureSpan">sails.router._privateRouter.</span>rebind
             <span class="apidocSignatureSpan">(path)</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.sails.router._privateRouter.removeAllListeners">
             function <span class="apidocSignatureSpan">sails.router._privateRouter.</span>removeAllListeners
             <span class="apidocSignatureSpan">(type)</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.sails.router._privateRouter.removeListener">
             function <span class="apidocSignatureSpan">sails.router._privateRouter.</span>removeListener
             <span class="apidocSignatureSpan">(type, listener)</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.sails.router._privateRouter.render">
             function <span class="apidocSignatureSpan">sails.router._privateRouter.</span>render
             <span class="apidocSignatureSpan">(name, options, fn)</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.sails.router._privateRouter.report">
             function <span class="apidocSignatureSpan">sails.router._privateRouter.</span>report
             <span class="apidocSignatureSpan">(path)</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.sails.router._privateRouter.router">
             function <span class="apidocSignatureSpan">sails.router._privateRouter.</span>router
             <span class="apidocSignatureSpan">(req, res, next)</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.sails.router._privateRouter.search">
             function <span class="apidocSignatureSpan">sails.router._privateRouter.</span>search
             <span class="apidocSignatureSpan">(path)</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.sails.router._privateRouter.set">
             function <span class="apidocSignatureSpan">sails.router._privateRouter.</span>set
             <span class="apidocSignatureSpan">(setting, val)</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.sails.router._privateRouter.setMaxListeners">
             function <span class="apidocSignatureSpan">sails.router._privateRouter.</span>setMaxListeners
             <span class="apidocSignatureSpan">(n)</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.sails.router._privateRouter.subscribe">
             function <span class="apidocSignatureSpan">sails.router._privateRouter.</span>subscribe
             <span class="apidocSignatureSpan">(path)</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.sails.router._privateRouter.trace">
             function <span class="apidocSignatureSpan">sails.router._privateRouter.</span>trace
             <span class="apidocSignatureSpan">(path)</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.sails.router._privateRouter.unbind">
             function <span class="apidocSignatureSpan">sails.router._privateRouter.</span>unbind
             <span class="apidocSignatureSpan">(path)</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.sails.router._privateRouter.unlink">
             function <span class="apidocSignatureSpan">sails.router._privateRouter.</span>unlink
             <span class="apidocSignatureSpan">(path)</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.sails.router._privateRouter.unlock">
             function <span class="apidocSignatureSpan">sails.router._privateRouter.</span>unlock
             <span class="apidocSignatureSpan">(path)</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.sails.router._privateRouter.unsubscribe">
             function <span class="apidocSignatureSpan">sails.router._privateRouter.</span>unsubscribe
             <span class="apidocSignatureSpan">(path)</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.sails.router._privateRouter.use">
             function <span class="apidocSignatureSpan">sails.router._privateRouter.</span>use
             <span class="apidocSignatureSpan">(route, fn)</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <span class="apidocSignatureSpan">number <span class="apidocSignatureSpan">sails.router._privateRouter.</span>_eventsCount</span>
-            
+
         </li>
-        
+
         <li>
-            
+
             <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">sails.router._privateRouter.</span>_events</span>
-            
+
         </li>
-        
+
         <li>
-            
+
             <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">sails.router._privateRouter.</span>_router</span>
-            
+
         </li>
-        
+
         <li>
-            
+
             <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">sails.router._privateRouter.</span>cache</span>
-            
+
         </li>
-        
+
         <li>
-            
+
             <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">sails.router._privateRouter.</span>engines</span>
-            
+
         </li>
-        
+
         <li>
-            
+
             <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">sails.router._privateRouter.</span>request</span>
-            
+
         </li>
-        
+
         <li>
-            
+
             <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">sails.router._privateRouter.</span>response</span>
-            
+
         </li>
-        
+
         <li>
-            
+
             <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">sails.router._privateRouter.</span>routes</span>
-            
+
         </li>
-        
+
         <li>
-            
+
             <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">sails.router._privateRouter.</span>settings</span>
-            
+
         </li>
-        
+
         <li>
-            
+
             <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">sails.router._privateRouter.</span>stack</span>
-            
+
         </li>
-        
+
         <li>
-            
+
             <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">sails.router._privateRouter.</span>route</span>
-            
+
         </li>
-        
+
         <li>
-            
+
             <span class="apidocSignatureSpan">undefined <span class="apidocSignatureSpan">sails.router._privateRouter.</span>domain</span>
-            
+
         </li>
-        
+
     </ol></li>
-    
+
     <li class="apidocModuleLi"><a href="#apidoc.module.sails.router.defaultHandlers">module sails.router.defaultHandlers</a><ol>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.sails.router.defaultHandlers.404">
             function <span class="apidocSignatureSpan">sails.router.defaultHandlers.</span>404
             <span class="apidocSignatureSpan">(req, res)</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.sails.router.defaultHandlers.500">
             function <span class="apidocSignatureSpan">sails.router.defaultHandlers.</span>500
             <span class="apidocSignatureSpan">(err, req, res)</span>
             </a>
-            
+
         </li>
-        
+
     </ol></li>
-    
+
 </ol></div>
 
 <div class="apidocSectionDiv">
 <h1><a href="#apidoc.module.sails" id="apidoc.module.sails">module sails</a></h1>
-    
-    
+
+
     <h2>
         <a href="#apidoc.element.sails.Sails" id="apidoc.element.sails.Sails">
         function <span class="apidocSignatureSpan">sails.</span>Sails
@@ -1229,9 +1229,9 @@
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.sails.after" id="apidoc.element.sails.after">
         function <span class="apidocSignatureSpan">sails.</span>after
@@ -1272,9 +1272,9 @@
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.sails.all" id="apidoc.element.sails.all">
         function <span class="apidocSignatureSpan">sails.</span>all
@@ -1288,9 +1288,9 @@
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.sails.delete" id="apidoc.element.sails.delete">
         function <span class="apidocSignatureSpan">sails.</span>delete
@@ -1304,9 +1304,9 @@
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.sails.emit" id="apidoc.element.sails.emit">
         function <span class="apidocSignatureSpan">sails.</span>emit
@@ -1321,9 +1321,9 @@
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.sails.exposeGlobals" id="apidoc.element.sails.exposeGlobals">
         function <span class="apidocSignatureSpan">sails.</span>exposeGlobals
@@ -1337,9 +1337,9 @@
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.sails.get" id="apidoc.element.sails.get">
         function <span class="apidocSignatureSpan">sails.</span>get
@@ -1353,9 +1353,9 @@
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.sails.getBaseurl" id="apidoc.element.sails.getBaseurl">
         function <span class="apidocSignatureSpan">sails.</span>getBaseurl
@@ -1369,9 +1369,9 @@
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.sails.getHost" id="apidoc.element.sails.getHost">
         function <span class="apidocSignatureSpan">sails.</span>getHost
@@ -1385,9 +1385,9 @@
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.sails.initialize" id="apidoc.element.sails.initialize">
         function <span class="apidocSignatureSpan">sails.</span>initialize
@@ -1401,9 +1401,9 @@
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.sails.inspect" id="apidoc.element.sails.inspect">
         function <span class="apidocSignatureSpan">sails.</span>inspect
@@ -1417,9 +1417,9 @@
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.sails.isLocalSailsValid" id="apidoc.element.sails.isLocalSailsValid">
         function <span class="apidocSignatureSpan">sails.</span>isLocalSailsValid
@@ -1433,9 +1433,9 @@
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.sails.isSailsAppSync" id="apidoc.element.sails.isSailsAppSync">
         function <span class="apidocSignatureSpan">sails.</span>isSailsAppSync
@@ -1449,9 +1449,9 @@
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.sails.lift" id="apidoc.element.sails.lift">
         function <span class="apidocSignatureSpan">sails.</span>lift
@@ -1465,9 +1465,9 @@
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.sails.load" id="apidoc.element.sails.load">
         function <span class="apidocSignatureSpan">sails.</span>load
@@ -1481,9 +1481,9 @@
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.sails.log" id="apidoc.element.sails.log">
         function <span class="apidocSignatureSpan">sails.</span>log
@@ -1570,9 +1570,9 @@
 * Exit proccess with a given error beautifully.
 ...</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.sails.lower" id="apidoc.element.sails.lower">
         function <span class="apidocSignatureSpan">sails.</span>lower
@@ -1586,9 +1586,9 @@
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.sails.post" id="apidoc.element.sails.post">
         function <span class="apidocSignatureSpan">sails.</span>post
@@ -1602,9 +1602,9 @@
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.sails.put" id="apidoc.element.sails.put">
         function <span class="apidocSignatureSpan">sails.</span>put
@@ -1618,9 +1618,9 @@
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.sails.request" id="apidoc.element.sails.request">
         function <span class="apidocSignatureSpan">sails.</span>request
@@ -1634,9 +1634,9 @@
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.sails.router._privateRouter" id="apidoc.element.sails.router._privateRouter">
         function <span class="apidocSignatureSpan">sails.</span>router._privateRouter
@@ -1647,9 +1647,9 @@
     <li>description and source-code<pre class="apidocCodePre">function app(req, res, next){ app.handle(req, res, next); }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.sails.runBootstrap" id="apidoc.element.sails.runBootstrap">
         function <span class="apidocSignatureSpan">sails.</span>runBootstrap
@@ -1663,9 +1663,9 @@
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.sails.toJSON" id="apidoc.element.sails.toJSON">
         function <span class="apidocSignatureSpan">sails.</span>toJSON
@@ -1679,30 +1679,30 @@
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 </div>
 
 <div class="apidocSectionDiv">
 <h1><a href="#apidoc.module.sails.Sails" id="apidoc.module.sails.Sails">module sails.Sails</a></h1>
-    
-    
+
+
     <h2>
         <a href="#apidoc.element.sails.Sails.Sails" id="apidoc.element.sails.Sails.Sails">
         function <span class="apidocSignatureSpan">sails.</span>Sails
@@ -1715,9 +1715,9 @@
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.sails.Sails.isLocalSailsValid" id="apidoc.element.sails.Sails.isLocalSailsValid">
         function <span class="apidocSignatureSpan">sails.Sails.</span>isLocalSailsValid
@@ -1731,9 +1731,9 @@
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.sails.Sails.isSailsAppSync" id="apidoc.element.sails.Sails.isSailsAppSync">
         function <span class="apidocSignatureSpan">sails.Sails.</span>isSailsAppSync
@@ -1747,14 +1747,14 @@
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
+
+
 </div>
 
 <div class="apidocSectionDiv">
 <h1><a href="#apidoc.module.sails.log" id="apidoc.module.sails.log">module sails.log</a></h1>
-    
-    
+
+
     <h2>
         <a href="#apidoc.element.sails.log.log" id="apidoc.element.sails.log.log">
         function <span class="apidocSignatureSpan">sails.</span>log
@@ -1841,9 +1841,9 @@
 * Exit proccess with a given error beautifully.
 ...</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.sails.log.blank" id="apidoc.element.sails.log.blank">
         function <span class="apidocSignatureSpan">sails.log.</span>blank
@@ -1914,9 +1914,9 @@
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.sails.log.crit" id="apidoc.element.sails.log.crit">
         function <span class="apidocSignatureSpan">sails.log.</span>crit
@@ -1987,9 +1987,9 @@
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.sails.log.debug" id="apidoc.element.sails.log.debug">
         function <span class="apidocSignatureSpan">sails.log.</span>debug
@@ -2060,9 +2060,9 @@
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.sails.log.error" id="apidoc.element.sails.log.error">
         function <span class="apidocSignatureSpan">sails.log.</span>error
@@ -2133,9 +2133,9 @@
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.sails.log.info" id="apidoc.element.sails.log.info">
         function <span class="apidocSignatureSpan">sails.log.</span>info
@@ -2206,9 +2206,9 @@
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.sails.log.silly" id="apidoc.element.sails.log.silly">
         function <span class="apidocSignatureSpan">sails.log.</span>silly
@@ -2279,9 +2279,9 @@
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.sails.log.verbose" id="apidoc.element.sails.log.verbose">
         function <span class="apidocSignatureSpan">sails.log.</span>verbose
@@ -2352,9 +2352,9 @@
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.sails.log.warn" id="apidoc.element.sails.log.warn">
         function <span class="apidocSignatureSpan">sails.log.</span>warn
@@ -2425,14 +2425,14 @@
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
+
+
 </div>
 
 <div class="apidocSectionDiv">
 <h1><a href="#apidoc.module.sails.router" id="apidoc.module.sails.router">module sails.router</a></h1>
-    
-    
+
+
     <h2>
         <a href="#apidoc.element.sails.router._privateRouter" id="apidoc.element.sails.router._privateRouter">
         function <span class="apidocSignatureSpan">sails.router.</span>_privateRouter
@@ -2443,9 +2443,9 @@
     <li>description and source-code<pre class="apidocCodePre">function app(req, res, next){ app.handle(req, res, next); }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.sails.router.bind" id="apidoc.element.sails.router.bind">
         function <span class="apidocSignatureSpan">sails.router.</span>bind
@@ -2459,9 +2459,9 @@
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.sails.router.flush" id="apidoc.element.sails.router.flush">
         function <span class="apidocSignatureSpan">sails.router.</span>flush
@@ -2475,9 +2475,9 @@
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.sails.router.load" id="apidoc.element.sails.router.load">
         function <span class="apidocSignatureSpan">sails.router.</span>load
@@ -2491,9 +2491,9 @@
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.sails.router.reset" id="apidoc.element.sails.router.reset">
         function <span class="apidocSignatureSpan">sails.router.</span>reset
@@ -2507,9 +2507,9 @@
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.sails.router.route" id="apidoc.element.sails.router.route">
         function <span class="apidocSignatureSpan">sails.router.</span>route
@@ -2523,9 +2523,9 @@
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.sails.router.unbind" id="apidoc.element.sails.router.unbind">
         function <span class="apidocSignatureSpan">sails.router.</span>unbind
@@ -2539,20 +2539,20 @@
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
-    
-    
-    
+
+
+
+
+
+
 </div>
 
 <div class="apidocSectionDiv">
 <h1><a href="#apidoc.module.sails.router._privateRouter" id="apidoc.module.sails.router._privateRouter">module sails.router._privateRouter</a></h1>
-    
-    
-    
-    
+
+
+
+
     <h2>
         <a href="#apidoc.element.sails.router._privateRouter._privateRouter" id="apidoc.element.sails.router._privateRouter._privateRouter">
         function <span class="apidocSignatureSpan">sails.router.</span>_privateRouter
@@ -2563,9 +2563,9 @@
     <li>description and source-code<pre class="apidocCodePre">function app(req, res, next){ app.handle(req, res, next); }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.sails.router._privateRouter.acl" id="apidoc.element.sails.router._privateRouter.acl">
         function <span class="apidocSignatureSpan">sails.router._privateRouter.</span>acl
@@ -2585,9 +2585,9 @@
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.sails.router._privateRouter.addListener" id="apidoc.element.sails.router._privateRouter.addListener">
         function <span class="apidocSignatureSpan">sails.router._privateRouter.</span>addListener
@@ -2600,9 +2600,9 @@
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.sails.router._privateRouter.all" id="apidoc.element.sails.router._privateRouter.all">
         function <span class="apidocSignatureSpan">sails.router._privateRouter.</span>all
@@ -2619,9 +2619,9 @@
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.sails.router._privateRouter.bind" id="apidoc.element.sails.router._privateRouter.bind">
         function <span class="apidocSignatureSpan">sails.router._privateRouter.</span>bind
@@ -2641,9 +2641,9 @@
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.sails.router._privateRouter.checkout" id="apidoc.element.sails.router._privateRouter.checkout">
         function <span class="apidocSignatureSpan">sails.router._privateRouter.</span>checkout
@@ -2663,9 +2663,9 @@
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.sails.router._privateRouter.configure" id="apidoc.element.sails.router._privateRouter.configure">
         function <span class="apidocSignatureSpan">sails.router._privateRouter.</span>configure
@@ -2680,9 +2680,9 @@ return fn.apply(this, arguments)
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.sails.router._privateRouter.connect" id="apidoc.element.sails.router._privateRouter.connect">
         function <span class="apidocSignatureSpan">sails.router._privateRouter.</span>connect
@@ -2702,9 +2702,9 @@ return fn.apply(this, arguments)
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.sails.router._privateRouter.copy" id="apidoc.element.sails.router._privateRouter.copy">
         function <span class="apidocSignatureSpan">sails.router._privateRouter.</span>copy
@@ -2724,9 +2724,9 @@ return fn.apply(this, arguments)
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.sails.router._privateRouter.defaultConfiguration" id="apidoc.element.sails.router._privateRouter.defaultConfiguration">
         function <span class="apidocSignatureSpan">sails.router._privateRouter.</span>defaultConfiguration
@@ -2801,9 +2801,9 @@ return fn.apply(this, arguments)
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.sails.router._privateRouter.del" id="apidoc.element.sails.router._privateRouter.del">
         function <span class="apidocSignatureSpan">sails.router._privateRouter.</span>del
@@ -2818,9 +2818,9 @@ return fn.apply(this, arguments)
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.sails.router._privateRouter.delete" id="apidoc.element.sails.router._privateRouter.delete">
         function <span class="apidocSignatureSpan">sails.router._privateRouter.</span>delete
@@ -2840,9 +2840,9 @@ return fn.apply(this, arguments)
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.sails.router._privateRouter.disable" id="apidoc.element.sails.router._privateRouter.disable">
         function <span class="apidocSignatureSpan">sails.router._privateRouter.</span>disable
@@ -2855,9 +2855,9 @@ return fn.apply(this, arguments)
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.sails.router._privateRouter.disabled" id="apidoc.element.sails.router._privateRouter.disabled">
         function <span class="apidocSignatureSpan">sails.router._privateRouter.</span>disabled
@@ -2870,9 +2870,9 @@ return fn.apply(this, arguments)
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.sails.router._privateRouter.emit" id="apidoc.element.sails.router._privateRouter.emit">
         function <span class="apidocSignatureSpan">sails.router._privateRouter.</span>emit
@@ -2895,16 +2895,13 @@ return fn.apply(this, arguments)
 
   // If there is no &#x27;error&#x27; event listener then throw.
   if (doError) {
-    if (arguments.length &#x3e; 1)
-      er = arguments[1];
+    er = arguments[1];
     if (domain) {
       if (!er)
         er = new Error(&#x27;Uncaught, unspecified &#x22;error&#x22; event&#x27;);
-      if (typeof er === &#x27;object&#x27; &#x26;&#x26; er !== null) {
-        er.domainEmitter = this;
-        er.domain = domain;
-        er.domainThrown = false;
-      }
+      er.domainEmitter = this;
+      er.domain = domain;
+      er.domainThrown = false;
       domain.emit(&#x27;error&#x27;, er);
     } else if (er instanceof Error) {
       throw er; // Unhandled &#x27;error&#x27; event
@@ -2958,9 +2955,9 @@ return fn.apply(this, arguments)
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.sails.router._privateRouter.enable" id="apidoc.element.sails.router._privateRouter.enable">
         function <span class="apidocSignatureSpan">sails.router._privateRouter.</span>enable
@@ -2973,9 +2970,9 @@ return fn.apply(this, arguments)
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.sails.router._privateRouter.enabled" id="apidoc.element.sails.router._privateRouter.enabled">
         function <span class="apidocSignatureSpan">sails.router._privateRouter.</span>enabled
@@ -2988,9 +2985,9 @@ return fn.apply(this, arguments)
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.sails.router._privateRouter.engine" id="apidoc.element.sails.router._privateRouter.engine">
         function <span class="apidocSignatureSpan">sails.router._privateRouter.</span>engine
@@ -3006,9 +3003,9 @@ return fn.apply(this, arguments)
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.sails.router._privateRouter.eventNames" id="apidoc.element.sails.router._privateRouter.eventNames">
         function <span class="apidocSignatureSpan">sails.router._privateRouter.</span>eventNames
@@ -3021,9 +3018,9 @@ return fn.apply(this, arguments)
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.sails.router._privateRouter.get" id="apidoc.element.sails.router._privateRouter.get">
         function <span class="apidocSignatureSpan">sails.router._privateRouter.</span>get
@@ -3043,9 +3040,9 @@ return fn.apply(this, arguments)
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.sails.router._privateRouter.getMaxListeners" id="apidoc.element.sails.router._privateRouter.getMaxListeners">
         function <span class="apidocSignatureSpan">sails.router._privateRouter.</span>getMaxListeners
@@ -3058,9 +3055,9 @@ return fn.apply(this, arguments)
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.sails.router._privateRouter.handle" id="apidoc.element.sails.router._privateRouter.handle">
         function <span class="apidocSignatureSpan">sails.router._privateRouter.</span>handle
@@ -3147,9 +3144,9 @@ return fn.apply(this, arguments)
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.sails.router._privateRouter.head" id="apidoc.element.sails.router._privateRouter.head">
         function <span class="apidocSignatureSpan">sails.router._privateRouter.</span>head
@@ -3169,9 +3166,9 @@ return fn.apply(this, arguments)
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.sails.router._privateRouter.init" id="apidoc.element.sails.router._privateRouter.init">
         function <span class="apidocSignatureSpan">sails.router._privateRouter.</span>init
@@ -3187,9 +3184,9 @@ return fn.apply(this, arguments)
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.sails.router._privateRouter.link" id="apidoc.element.sails.router._privateRouter.link">
         function <span class="apidocSignatureSpan">sails.router._privateRouter.</span>link
@@ -3209,9 +3206,9 @@ return fn.apply(this, arguments)
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.sails.router._privateRouter.listen" id="apidoc.element.sails.router._privateRouter.listen">
         function <span class="apidocSignatureSpan">sails.router._privateRouter.</span>listen
@@ -3225,9 +3222,9 @@ return fn.apply(this, arguments)
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.sails.router._privateRouter.listenerCount" id="apidoc.element.sails.router._privateRouter.listenerCount">
         function <span class="apidocSignatureSpan">sails.router._privateRouter.</span>listenerCount
@@ -3252,9 +3249,9 @@ return fn.apply(this, arguments)
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.sails.router._privateRouter.listeners" id="apidoc.element.sails.router._privateRouter.listeners">
         function <span class="apidocSignatureSpan">sails.router._privateRouter.</span>listeners
@@ -3274,18 +3271,18 @@ return fn.apply(this, arguments)
     if (!evlistener)
       ret = [];
     else if (typeof evlistener === &#x27;function&#x27;)
-      ret = [evlistener.listener || evlistener];
+      ret = [evlistener];
     else
-      ret = unwrapListeners(evlistener);
+      ret = arrayClone(evlistener, evlistener.length);
   }
 
   return ret;
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.sails.router._privateRouter.locals" id="apidoc.element.sails.router._privateRouter.locals">
         function <span class="apidocSignatureSpan">sails.router._privateRouter.</span>locals
@@ -3299,9 +3296,9 @@ return fn.apply(this, arguments)
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.sails.router._privateRouter.lock" id="apidoc.element.sails.router._privateRouter.lock">
         function <span class="apidocSignatureSpan">sails.router._privateRouter.</span>lock
@@ -3321,9 +3318,9 @@ return fn.apply(this, arguments)
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.sails.router._privateRouter.m-search" id="apidoc.element.sails.router._privateRouter.m-search">
         function <span class="apidocSignatureSpan">sails.router._privateRouter.</span>m-search
@@ -3343,9 +3340,9 @@ return fn.apply(this, arguments)
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.sails.router._privateRouter.merge" id="apidoc.element.sails.router._privateRouter.merge">
         function <span class="apidocSignatureSpan">sails.router._privateRouter.</span>merge
@@ -3365,9 +3362,9 @@ return fn.apply(this, arguments)
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.sails.router._privateRouter.mkactivity" id="apidoc.element.sails.router._privateRouter.mkactivity">
         function <span class="apidocSignatureSpan">sails.router._privateRouter.</span>mkactivity
@@ -3387,9 +3384,9 @@ return fn.apply(this, arguments)
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.sails.router._privateRouter.mkcalendar" id="apidoc.element.sails.router._privateRouter.mkcalendar">
         function <span class="apidocSignatureSpan">sails.router._privateRouter.</span>mkcalendar
@@ -3409,9 +3406,9 @@ return fn.apply(this, arguments)
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.sails.router._privateRouter.mkcol" id="apidoc.element.sails.router._privateRouter.mkcol">
         function <span class="apidocSignatureSpan">sails.router._privateRouter.</span>mkcol
@@ -3431,9 +3428,9 @@ return fn.apply(this, arguments)
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.sails.router._privateRouter.move" id="apidoc.element.sails.router._privateRouter.move">
         function <span class="apidocSignatureSpan">sails.router._privateRouter.</span>move
@@ -3453,9 +3450,9 @@ return fn.apply(this, arguments)
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.sails.router._privateRouter.notify" id="apidoc.element.sails.router._privateRouter.notify">
         function <span class="apidocSignatureSpan">sails.router._privateRouter.</span>notify
@@ -3475,9 +3472,9 @@ return fn.apply(this, arguments)
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.sails.router._privateRouter.on" id="apidoc.element.sails.router._privateRouter.on">
         function <span class="apidocSignatureSpan">sails.router._privateRouter.</span>on
@@ -3490,9 +3487,9 @@ return fn.apply(this, arguments)
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.sails.router._privateRouter.once" id="apidoc.element.sails.router._privateRouter.once">
         function <span class="apidocSignatureSpan">sails.router._privateRouter.</span>once
@@ -3508,9 +3505,9 @@ return fn.apply(this, arguments)
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.sails.router._privateRouter.options" id="apidoc.element.sails.router._privateRouter.options">
         function <span class="apidocSignatureSpan">sails.router._privateRouter.</span>options
@@ -3530,9 +3527,9 @@ return fn.apply(this, arguments)
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.sails.router._privateRouter.param" id="apidoc.element.sails.router._privateRouter.param">
         function <span class="apidocSignatureSpan">sails.router._privateRouter.</span>param
@@ -3566,9 +3563,9 @@ return fn.apply(this, arguments)
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.sails.router._privateRouter.patch" id="apidoc.element.sails.router._privateRouter.patch">
         function <span class="apidocSignatureSpan">sails.router._privateRouter.</span>patch
@@ -3588,9 +3585,9 @@ return fn.apply(this, arguments)
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.sails.router._privateRouter.path" id="apidoc.element.sails.router._privateRouter.path">
         function <span class="apidocSignatureSpan">sails.router._privateRouter.</span>path
@@ -3605,9 +3602,9 @@ return fn.apply(this, arguments)
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.sails.router._privateRouter.post" id="apidoc.element.sails.router._privateRouter.post">
         function <span class="apidocSignatureSpan">sails.router._privateRouter.</span>post
@@ -3627,9 +3624,9 @@ return fn.apply(this, arguments)
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.sails.router._privateRouter.prependListener" id="apidoc.element.sails.router._privateRouter.prependListener">
         function <span class="apidocSignatureSpan">sails.router._privateRouter.</span>prependListener
@@ -3642,9 +3639,9 @@ return fn.apply(this, arguments)
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.sails.router._privateRouter.prependOnceListener" id="apidoc.element.sails.router._privateRouter.prependOnceListener">
         function <span class="apidocSignatureSpan">sails.router._privateRouter.</span>prependOnceListener
@@ -3660,9 +3657,9 @@ return fn.apply(this, arguments)
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.sails.router._privateRouter.propfind" id="apidoc.element.sails.router._privateRouter.propfind">
         function <span class="apidocSignatureSpan">sails.router._privateRouter.</span>propfind
@@ -3682,9 +3679,9 @@ return fn.apply(this, arguments)
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.sails.router._privateRouter.proppatch" id="apidoc.element.sails.router._privateRouter.proppatch">
         function <span class="apidocSignatureSpan">sails.router._privateRouter.</span>proppatch
@@ -3704,9 +3701,9 @@ return fn.apply(this, arguments)
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.sails.router._privateRouter.purge" id="apidoc.element.sails.router._privateRouter.purge">
         function <span class="apidocSignatureSpan">sails.router._privateRouter.</span>purge
@@ -3726,9 +3723,9 @@ return fn.apply(this, arguments)
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.sails.router._privateRouter.put" id="apidoc.element.sails.router._privateRouter.put">
         function <span class="apidocSignatureSpan">sails.router._privateRouter.</span>put
@@ -3748,9 +3745,9 @@ return fn.apply(this, arguments)
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.sails.router._privateRouter.rebind" id="apidoc.element.sails.router._privateRouter.rebind">
         function <span class="apidocSignatureSpan">sails.router._privateRouter.</span>rebind
@@ -3770,9 +3767,9 @@ return fn.apply(this, arguments)
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.sails.router._privateRouter.removeAllListeners" id="apidoc.element.sails.router._privateRouter.removeAllListeners">
         function <span class="apidocSignatureSpan">sails.router._privateRouter.</span>removeAllListeners
@@ -3830,9 +3827,9 @@ return fn.apply(this, arguments)
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.sails.router._privateRouter.removeListener" id="apidoc.element.sails.router._privateRouter.removeListener">
         function <span class="apidocSignatureSpan">sails.router._privateRouter.</span>removeListener
@@ -3884,8 +3881,6 @@ return fn.apply(this, arguments)
       } else {
         delete events[type];
       }
-    } else if (position === 0) {
-      list.shift();
     } else {
       spliceOne(list, position);
     }
@@ -3898,9 +3893,9 @@ return fn.apply(this, arguments)
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.sails.router._privateRouter.render" id="apidoc.element.sails.router._privateRouter.render">
         function <span class="apidocSignatureSpan">sails.router._privateRouter.</span>render
@@ -3965,9 +3960,9 @@ return fn.apply(this, arguments)
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.sails.router._privateRouter.report" id="apidoc.element.sails.router._privateRouter.report">
         function <span class="apidocSignatureSpan">sails.router._privateRouter.</span>report
@@ -3987,9 +3982,9 @@ return fn.apply(this, arguments)
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.sails.router._privateRouter.router" id="apidoc.element.sails.router._privateRouter.router">
         function <span class="apidocSignatureSpan">sails.router._privateRouter.</span>router
@@ -4002,9 +3997,9 @@ return fn.apply(this, arguments)
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.sails.router._privateRouter.search" id="apidoc.element.sails.router._privateRouter.search">
         function <span class="apidocSignatureSpan">sails.router._privateRouter.</span>search
@@ -4024,9 +4019,9 @@ return fn.apply(this, arguments)
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.sails.router._privateRouter.set" id="apidoc.element.sails.router._privateRouter.set">
         function <span class="apidocSignatureSpan">sails.router._privateRouter.</span>set
@@ -4066,9 +4061,9 @@ return fn.apply(this, arguments)
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.sails.router._privateRouter.setMaxListeners" id="apidoc.element.sails.router._privateRouter.setMaxListeners">
         function <span class="apidocSignatureSpan">sails.router._privateRouter.</span>setMaxListeners
@@ -4084,9 +4079,9 @@ return fn.apply(this, arguments)
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.sails.router._privateRouter.subscribe" id="apidoc.element.sails.router._privateRouter.subscribe">
         function <span class="apidocSignatureSpan">sails.router._privateRouter.</span>subscribe
@@ -4106,9 +4101,9 @@ return fn.apply(this, arguments)
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.sails.router._privateRouter.trace" id="apidoc.element.sails.router._privateRouter.trace">
         function <span class="apidocSignatureSpan">sails.router._privateRouter.</span>trace
@@ -4128,9 +4123,9 @@ return fn.apply(this, arguments)
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.sails.router._privateRouter.unbind" id="apidoc.element.sails.router._privateRouter.unbind">
         function <span class="apidocSignatureSpan">sails.router._privateRouter.</span>unbind
@@ -4150,9 +4145,9 @@ return fn.apply(this, arguments)
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.sails.router._privateRouter.unlink" id="apidoc.element.sails.router._privateRouter.unlink">
         function <span class="apidocSignatureSpan">sails.router._privateRouter.</span>unlink
@@ -4172,9 +4167,9 @@ return fn.apply(this, arguments)
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.sails.router._privateRouter.unlock" id="apidoc.element.sails.router._privateRouter.unlock">
         function <span class="apidocSignatureSpan">sails.router._privateRouter.</span>unlock
@@ -4194,9 +4189,9 @@ return fn.apply(this, arguments)
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.sails.router._privateRouter.unsubscribe" id="apidoc.element.sails.router._privateRouter.unsubscribe">
         function <span class="apidocSignatureSpan">sails.router._privateRouter.</span>unsubscribe
@@ -4216,9 +4211,9 @@ return fn.apply(this, arguments)
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.sails.router._privateRouter.use" id="apidoc.element.sails.router._privateRouter.use">
         function <span class="apidocSignatureSpan">sails.router._privateRouter.</span>use
@@ -4260,38 +4255,38 @@ return fn.apply(this, arguments)
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 </div>
 
 <div class="apidocSectionDiv">
 <h1><a href="#apidoc.module.sails.router.defaultHandlers" id="apidoc.module.sails.router.defaultHandlers">module sails.router.defaultHandlers</a></h1>
-    
-    
+
+
     <h2>
         <a href="#apidoc.element.sails.router.defaultHandlers.404" id="apidoc.element.sails.router.defaultHandlers.404">
         function <span class="apidocSignatureSpan">sails.router.defaultHandlers.</span>404
@@ -4332,9 +4327,9 @@ return fn.apply(this, arguments)
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.sails.router.defaultHandlers.500" id="apidoc.element.sails.router.defaultHandlers.500">
         function <span class="apidocSignatureSpan">sails.router.defaultHandlers.</span>500
@@ -4397,8 +4392,8 @@ return fn.apply(this, arguments)
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
+
+
 </div>
 
 <div class="apidocFooterDiv">
