@@ -1,6 +1,6 @@
 # npmdoc-sails
 
-#### api documentation for  [sails (v0.12.13)](http://sailsjs.org)  [![npm package](https://img.shields.io/npm/v/npmdoc-sails.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-sails) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-sails.svg)](https://travis-ci.org/npmdoc/node-npmdoc-sails)
+#### basic api documentation for  [sails (v0.12.13)](http://sailsjs.org)  [![npm package](https://img.shields.io/npm/v/npmdoc-sails.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-sails) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-sails.svg)](https://travis-ci.org/npmdoc/node-npmdoc-sails)
 
 #### API-driven framework for building realtime apps, using MVC conventions (based on Express and Socket.io)
 
